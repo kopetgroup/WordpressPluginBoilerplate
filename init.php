@@ -26,14 +26,14 @@
 */
 if(isset($_REQUEST['ngapi'])){
 
-	require_once plugin_dir_path(__FILE__) . 'app/front/RizoPosts.class.php';
-	require_once plugin_dir_path(__FILE__) . 'app/front/RizoFront.class.php';
+	//require_once plugin_dir_path(__FILE__) . 'app/front/RizoPosts.class.php';
+	//require_once plugin_dir_path(__FILE__) . 'app/front/RizoFront.class.php';
 
 	//if newpost triggered
 	if(isset($_REQUEST['newpost'])){
-		add_action('init', array( 'RizoPosts', 'newpost' ));
+		//add_action('init', array( 'RizoPosts', 'newpost' ));
 	}elseif(isset($_REQUEST['status'])){
-		add_action('init', array( 'RizoFront', 'status' ));
+		//add_action('init', array( 'RizoFront', 'status' ));
 	}
 }
 
